@@ -1,5 +1,5 @@
 # boostrap-table-column-freeze
-Table for fixing particular columns of bootstrap from either left side or right side
+Code for fixing particular columns of bootstrap table from either left side or right side
 
 # demonstration using static table
 
