@@ -13,10 +13,13 @@
   <!-- Data table css  -->
   <link rel='stylesheet' href='https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css' type='text/css' />
 
-
+ <!-- Jquery script  -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!-- Data table script  -->
   <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+  <!-- Fixed colums script  -->
   <script src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
+  <!-- custom CSS and JS files  -->
   <script src="./index.js"></script>
   <link rel="stylesheet" href="./index.css">
 
@@ -26,7 +29,7 @@
 <body>
 
     <div class="table-container">
-        <table id="example" class="stripe row-border order-column" data-sticky-header style="width:100%">
+        <table id="example" class="stripe row-border order-column" style="width:100%">
             <thead>
                 <tr>
                     <th colspan="1" rowspan="2">Rank</th>
@@ -35,7 +38,7 @@
                     <th colspan="3" rowspan="1">Code Chef</th>
                     <th colspan="1" rowspan="1">VJudge</th>
                     <th colspan="1" rowspan="1">Leet Code</th>
-                    <th colspan="1" rowspan="1">InterviewBit</th>
+                    <th colspan="2" rowspan="1">InterviewBit</th>
                     <th colspan="2" rowspan="1">Smart Interviews Basic</th>
                     <th colspan="1" rowspan="2">Total</th>
                 </tr>
@@ -48,7 +51,8 @@
                     <th>Solved Count</th>
                     <th>Solved Count</th>
                     <th>Solved Count</th>
-                    <th>Solved Count</th>
+                    <th>Rank</th>
+                    <th>Score</th>
                     <th>Rank</th>
                     <th>Score</th>
                 </tr>
@@ -65,7 +69,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -81,167 +86,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -257,7 +103,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -273,167 +120,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -449,7 +137,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -465,167 +154,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -641,7 +171,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -657,167 +188,8 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
@@ -833,380 +205,13 @@
                     <td>CC Rating</td>
                     <td>VJudge Solved Count</td>
                     <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
+                    <td>InterviewBit Rank</td>
+                    <td>InterviewBit Score</td>
                     <td>Smart Interviews Rank</td>
                     <td>Smart Interviews Score</td>
                     <td>Total Score</td>
                 </tr>
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr> 
-                <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-                 <tr>
-                    <td>User Rank</td>
-                    <td>Mentorpick user</td>
-                    <td>CF Contest Attended</td>
-                    <td>CF Solved Count</td>
-                    <td>CF Rating</td>
-                    <td>CC Contest Attended</td>
-                    <td>CC Solved Count</td>
-                    <td>CC Rating</td>
-                    <td>VJudge Solved Count</td>
-                    <td>Leetcode Solved Count</td>
-                    <td>InterviewBit Solved Count</td>
-                    <td>Smart Interviews Rank</td>
-                    <td>Smart Interviews Score</td>
-                    <td>Total Score</td>
-                </tr>
-            </tbody>
+                </tbody>
         </table>
     </div>
 
