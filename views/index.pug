@@ -1,0 +1,88 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		link(rel='stylesheet' href='./index.css')
+		title The HTML5 Herald
+		meta(name='description' content='The HTML5 Herald')
+		meta(name='author' content='SitePoint')
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' type='text/css')
+		// fixed columns css
+		link(rel='stylesheet' href='https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.dataTables.min.css' type='text/css')
+		// Data table css
+		link(rel='stylesheet' href='https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css' type='text/css')
+		// Jquery script
+		script(src='https://code.jquery.com/jquery-3.5.1.js')
+		// Data table script
+		script(src='https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js')
+		// Fixed colums script
+		script(src='https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js')
+		// custom CSS and JS files
+		script(src='/js/leaderboard.js')
+		link(rel='stylesheet' href='/css/leaderboard.css')
+	body
+		.table-container
+			table#example.stripe.row-border.order-column(style='width:100%')
+				thead
+					tr
+						th(colspan='1' rowspan='2') Rank
+						th(colspan='1' rowspan='2') Mentorpick username
+						th(colspan='3' rowspan='1') Codeforces
+						th(colspan='3' rowspan='1') Code Chef
+						th(colspan='1' rowspan='1') VJudge
+						th(colspan='1' rowspan='1') Leet Code
+						th(colspan='2' rowspan='1') InterviewBit
+						th(colspan='2' rowspan='1') Smart Interviews Basic
+						th(colspan='1' rowspan='2') Total
+					tr
+						// Code Forces
+						th Contest Attended
+						th Solved Count
+						th Rating
+						// Code Chef
+						th Contest Attended
+						th Solved Count
+						th Rating
+						// VJudge
+						th Solved Count
+						// Leet Code
+						th Solved Count
+						// InterviewBit
+						th Rank
+						th Score
+						// Smart Interviews Basic
+						th Rank
+						th Score
+				tbody
+					tr
+						td User Rank
+						td Mentorpick user
+						td CF Contest Attended
+						td CF Solved Count
+						td CF Rating
+						td CC Contest Attended
+						td CC Solved Count
+						td CC Rating
+						td VJudge Solved Count
+						td Leetcode Solved Count
+						td InterviewBit Rank
+						td InterviewBit Score
+						td Smart Interviews Rank
+						td Smart Interviews Score
+						td Total Score
+					tr
+						td User Rank
+						td Mentorpick user
+						td CF Contest Attended
+						td CF Solved Count
+						td CF Rating
+						td CC Contest Attended
+						td CC Solved Count
+						td CC Rating
+						td VJudge Solved Count
+						td Leetcode Solved Count
+						td InterviewBit Rank
+						td InterviewBit Score
+						td Smart Interviews Rank
+						td Smart Interviews Score
+						td Total Score
