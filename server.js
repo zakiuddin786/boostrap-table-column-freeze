@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const axios = require("axios");
 
 var bodyParser = require('body-parser');
 var fs = require('fs');
@@ -18,12 +19,20 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json())
+
 app.use(function(err, req, res, next) {
   console.error(err.stack)
   res.status(500).send('Something broke!')
 })
 
-  app.get('/', (req, res) => res.render('index'));
+  app.get('/',async (req, res) =>{
+    let leaderBoard = await axios.get("api of leaderboard");
+    leaderBoard = leaderBoard.data;
+    console.log(leaderBoard);
+    res.render('index',{
+      leaderBoard
+    })
+  } );
 
   // ALL SPECIFIC PAGES SHOULD BE CALLED HERE
 

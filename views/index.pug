@@ -2,7 +2,6 @@ doctype html
 html(lang='en')
 	head
 		meta(charset='utf-8')
-		link(rel='stylesheet' href='./index.css')
 		title The HTML5 Herald
 		meta(name='description' content='The HTML5 Herald')
 		meta(name='author' content='SitePoint')
@@ -32,7 +31,8 @@ html(lang='en')
 						th(colspan='1' rowspan='1') VJudge
 						th(colspan='1' rowspan='1') Leet Code
 						th(colspan='2' rowspan='1') InterviewBit
-						th(colspan='2' rowspan='1') Smart Interviews Basic
+						th(colspan='2' rowspan='1') HR Smart Interviews Basic
+						th(colspan='2' rowspan='1') HR Smart Interviews
 						th(colspan='1' rowspan='2') Total
 					tr
 						// Code Forces
@@ -53,36 +53,28 @@ html(lang='en')
 						// Smart Interviews Basic
 						th Rank
 						th Score
+						// Smart Interviews
+						th Rank
+						th Score
 				tbody
-					tr
-						td User Rank
-						td Mentorpick user
-						td CF Contest Attended
-						td CF Solved Count
-						td CF Rating
-						td CC Contest Attended
-						td CC Solved Count
-						td CC Rating
-						td VJudge Solved Count
-						td Leetcode Solved Count
-						td InterviewBit Rank
-						td InterviewBit Score
-						td Smart Interviews Rank
-						td Smart Interviews Score
-						td Total Score
-					tr
-						td User Rank
-						td Mentorpick user
-						td CF Contest Attended
-						td CF Solved Count
-						td CF Rating
-						td CC Contest Attended
-						td CC Solved Count
-						td CC Rating
-						td VJudge Solved Count
-						td Leetcode Solved Count
-						td InterviewBit Rank
-						td InterviewBit Score
-						td Smart Interviews Rank
-						td Smart Interviews Score
-						td Total Score
+					each item, index in leaderBoard
+						tr
+							td #{index+1}
+							td #{item.mentorpick_username}
+							td #{item.codeforces_contests_attended}
+							td #{item.codeforces_solved_count}
+							td #{item.codeforces_rating}
+							td #{item.codechef_contests_attended}
+							td #{item.codechef_solved_count}
+							td #{item.codechef_star_rating}
+							td #{item.vjudge_solved_count}
+							td #{item.leetcode_solved_count}
+							td #{item.interviewbit_rank}
+							td #{item.interviewbit_score}
+							td #{item.hackerrank_smart_interviews_basic_rank}
+							td #{item.hackerrank_smart_interviews_basic_score}
+							
+							td #{item.hackerrank_smart_interviews_rank}
+							td #{item.hackerrank_smart_interviews_score}
+							td Total Score
+					

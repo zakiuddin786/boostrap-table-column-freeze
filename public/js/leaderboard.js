@@ -7,7 +7,8 @@ $(document).ready(function() {
         fixedColumns:   {
             leftColumns: 2,
             rightColumns: 1
-        }
+        },
+        pageLength: 25
     } );
 } );
 
