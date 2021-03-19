@@ -34,27 +34,6 @@ app.use(function(err, req, res, next) {
     })
   } );
 
-  // ALL SPECIFIC PAGES SHOULD BE CALLED HERE
-
-  app.get('/all-testimonials',async (req,res)=>{
-    try {
-      let testimonials = await Testimonial.find().sort({priority:1});
-      // testimonials=randomArrayShuffle(testimonials);
-      console.log(testimonials);
-      let testimonialCount=testimonials.length;
-      res.render('testimonials', {
-        title:'Testimonials',
-        testimonials: testimonials,
-        length:testimonialCount
-      });
-    } catch (error) {
-      console.log(error)
-    }
-  })
-  // PLACEHOLDER FOR GETTING ANY PAGE FROM VIEW
-
-
-
   http.createServer(app).listen(app.get('port'), function () {
     console.log("Express server listening on port " + app.get('port'));
   });
